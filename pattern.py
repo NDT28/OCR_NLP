@@ -1,0 +1,21 @@
+import re
+pattern_company =r'1\..+\n+.+[ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂỄỆẾỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴÝỶỸ\&A-Z- ]{2,10}\n*.+'
+pattern_company_only = r'[ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂỄỆẾỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴÝỶỸ\&A-Z- ]{3,300}'
+pattern_without_T = r' T$'
+pattern_company_without_n = r'[\n]{1,4}'
+pattern_MSDN =  r"2\..+\d+"
+pattern_MSDN_only = r"\d+$"
+pattern_NTL = r"3\..+[\w]{2}\/[\w]{2}\/[\w]{4}"
+pattern_NTL_only = r"[\w]{2}\/[\w]{2}\/[\w]{4}$"
+pattern_address = r'4\..+\n+.+\n*.+'
+pattern_address_without_n = r'[\n]{1,4}'
+pattern_phone = r'Điện thoại:.+[\d\. ]'
+pattern_phone_only = r'\d.+'
+pattern_phone_without_dot =  r'[\s\.\,]'
+pattern_name_director = r'(\* Họ và tên.+)|(\* Hovàtên.+)|(\* Họovàtên.+)|(\* Họvàtên.+)|(\* Họ vàtên.+)|(\* Họvà tên.+)|(\* Họovà tên.+)|(\* Họo và tên.+)'
+pattern_name_only = r'[ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂỄỆẾỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴÝỶỸA-Z ]{3,300}'
+pattern_name_original = r"(C$)|(G$)"
+pattern_district = r'Quận.+,'
+pattern_city = r'(Thành phô.+\,)|(Thành phố .+\,)|(Thanh phố.+\,)|(Thanh phô.+\,)'
+pattern_province = r'(Tinh.+\,)|(Tỉnh.+\,)|(Tĩnh.+\,)'
+pattern_district = r"(Quận .+,)|(Quân .+,)|(Quan .+,)|(Huyen .+,)|(Huyện .+,)|(Huyên .+,)"
